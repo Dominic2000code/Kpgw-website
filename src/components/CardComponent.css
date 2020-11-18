@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  /* margin: 3px; */
+  justify-content: center;
+}
+
+.card {
+  width: 30rem;
+  height: 20rem;
+}
