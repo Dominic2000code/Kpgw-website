@@ -65,9 +65,6 @@ export default function CustomizedTables() {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            {/* <StyledTableCell component="th" scope="row">
-                                {row.name}
-                            </StyledTableCell> */}
                             <StyledTableCell align="center">{row.Days}</StyledTableCell>
                             <StyledTableCell align="center">{row.Program}</StyledTableCell>
                             <StyledTableCell align="center">{row.Time}</StyledTableCell>

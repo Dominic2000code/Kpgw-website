@@ -1,0 +1,24 @@
+.btn_{
+    background: #03004d;
+    color: #fff;
+}
+
+.Container_{
+    text-align: center;
+    width:100%;
+}
+
+.img{
+    width: 100%;
+}
+
+.head-title_::after{
+    content: '';
+    display: block;
+    width: 9em;
+    height: 2px;
+    margin: 0.2em auto 1em;
+    background: #000;
+    opacity: 0.25;
+    margin-bottom: 0.25em;
+}
