@@ -3,6 +3,7 @@
   flex-direction: row;
   /* margin: 3px; */
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .card {

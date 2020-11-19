@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import CarouselComponent from "../components/CarouselComponent"
 import CardComponent from "../components/CardComponent"
+import MeetingTable from "../components/MeetingTable"
 import "../components/carouselContainer.css"
 import "../components/Container.css"
 
@@ -14,7 +15,8 @@ export default function Home() {
       <div className="carousel-container">
         <CarouselComponent/>
       </div>
-      <CardComponent/>
+      <CardComponent />
+      <MeetingTable/>
       
 
       <Footer/>

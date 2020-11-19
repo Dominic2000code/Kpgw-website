@@ -5,7 +5,7 @@ import "./CardComponent.css"
 
 const CardComponent = () => {
     return ( 
-        <div className="container mt-5 mb-4">
+        <div className="container mt-5 mb-5">
             <Card className="m-3 shadow-lg card" >
                 <CardHeader className="text-center font-weight-bold">OUR MISSION</CardHeader>
                 <CardBody className="text-center">
