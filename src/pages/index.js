@@ -6,6 +6,7 @@ import CarouselComponent from "../components/CarouselComponent"
 import CardComponent from "../components/CardComponent"
 import MeetingTable from "../components/MeetingTable"
 import EventsAndConferences from "../components/Events&Conferences"
+import LocateUs from "../components/LocateUs"
 import "../components/carouselContainer.css"
 import "../components/Container.css"
 
@@ -19,6 +20,7 @@ export default function Home() {
       <CardComponent />
       <MeetingTable />
       <EventsAndConferences/>
+      <LocateUs/>
       <Footer/>
     </>
   )

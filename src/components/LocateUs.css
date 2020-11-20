@@ -1,0 +1,29 @@
+.locateUs__head-title::after{
+    content: '';
+    display: block;
+    width: 4.5em;
+    height: 2px;
+    margin: 0.2em auto 1em;
+    background: #000;
+    opacity: 0.25;
+    margin-bottom: 0.25em;
+}
+
+/* .map{
+    width:500px;
+    height:500px;
+} */
+
+.inner-container{
+    display:flex;
+}
+
+.location{
+    display: inline;
+}
+
+.locateUs-container{
+    width:50%;
+    margin: 0 auto ;
+}
+
