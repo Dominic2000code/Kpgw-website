@@ -1,0 +1,46 @@
+form {
+    padding: 20px;
+    display:inline-block;
+    text-align: left;
+    
+}
+
+.subscribe-container{
+    color: #fff;
+    height: 60vh;
+    margin: auto;
+}
+
+.form-container{
+    display: block;
+    text-align: center;
+}
+
+input[type="text"] {
+	width: 500px;
+	padding: 5px;
+	/* font-weight: bold; */
+	/* font-size: 1.2em; */
+}
+
+input[type="text"]:focus {
+	outline-color: none;
+	outline-style: none;
+}
+
+input[type="submit"] {
+	margin: 10px auto;
+    background: #03004d;
+    color: #fff;
+	border: 0;
+	padding: 6.5px 20px;
+    text-transform: uppercase;
+    margin-right: 2px;
+	
+}
+
+input[type="submit"]:hover {
+	background: #0088a9;
+	color: #ffff;
+	cursor: pointer;
+}

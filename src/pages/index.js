@@ -7,6 +7,7 @@ import CardComponent from "../components/CardComponent"
 import MeetingTable from "../components/MeetingTable"
 import EventsAndConferences from "../components/Events&Conferences"
 import LocateUs from "../components/LocateUs"
+import Subscribe from "../components/Subscribe"
 import "../components/carouselContainer.css"
 import "../components/Container.css"
 
@@ -21,6 +22,7 @@ export default function Home() {
       <MeetingTable />
       <EventsAndConferences/>
       <LocateUs/>
+      <Subscribe/>
       <Footer/>
     </>
   )
