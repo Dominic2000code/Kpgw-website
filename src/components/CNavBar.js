@@ -3,7 +3,7 @@ import React from "react"
 // import Img from "gatsby-image"
 // import {graphql, useStaticQuery} from "gatsby"
 import KpgwLogo from "../images/KPGW-Logo.png"
-import "./NavBar.css"
+import "./CNavBar.css"
 
 const NavBar = () => {
     // const data = useStaticQuery(graphql`

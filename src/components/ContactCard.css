@@ -1,0 +1,23 @@
+.ContactCard-Container{
+    text-align: center;
+    /* background:#fff;
+    color:#000; */
+}
+.aOne{
+    color: #000;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.aOne:hover{
+    text-decoration: none;
+}
+
+.card_{
+    width: 400px;
+    height: 200px;
+    background: #fff;
+    margin: 0 auto;
+}

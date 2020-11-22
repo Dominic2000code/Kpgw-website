@@ -1,5 +1,5 @@
 import React from "react"
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import CarouselComponent from "../components/CarouselComponent"
@@ -8,22 +8,20 @@ import MeetingTable from "../components/MeetingTable"
 import EventsAndConferences from "../components/Events&Conferences"
 import LocateUs from "../components/LocateUs"
 import Subscribe from "../components/Subscribe"
-import "../components/carouselContainer.css"
+// import "../components/carouselContainer.css"
 import "../components/Container.css"
 
 export default function Home() {
   return (
     <>
-      <NavBar isActive="home" />
-      <div className="carousel-container">
-        <CarouselComponent/>
-      </div>
+      <NavBar />
+      <CarouselComponent />
       <CardComponent />
       <MeetingTable />
-      <EventsAndConferences/>
-      <LocateUs/>
-      <Subscribe/>
-      <Footer/>
+      <EventsAndConferences />
+      <LocateUs />
+      <Subscribe />
+      <Footer />
     </>
   )
 }
