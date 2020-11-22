@@ -7,7 +7,7 @@ import "./ContactCard.css"
 const ContactCard = () => {
   return (
     <div>
-      <h3 className="mt-2">Contact Information:</h3>
+      <h3 className="mt-2">Contact Information</h3>
       <div className="ContactCard-Container mt-3">
         <div className="card_ shadow align-self-center mb-3">
           <p className="pb-5">Phone:</p>
