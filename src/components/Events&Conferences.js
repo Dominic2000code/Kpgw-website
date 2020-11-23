@@ -22,7 +22,7 @@ const EventsAndConferences = () => {
             <div className="img">
                 <Img fluid={ data.imageSharp.fluid} />
             </div>
-            <Button variant="contained" className="btn mt-3 " color="primary" size="large" >View</Button>
+            <Button variant="contained" className="btn mt-3 " color="primary" size="large" href="/events-and-conferences/" >View</Button>
         </div>
     );
 }
