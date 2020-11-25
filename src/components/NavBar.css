@@ -1,4 +1,4 @@
-
+/* 
 img {
   max-width: 100%;
   height: auto;
@@ -63,4 +63,138 @@ a {
 .nav__links li a:hover{
     color: #0088a9;
     text-decoration: none;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.NavbarItems {
+  background: #03004d;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-logo {
+  cursor: pointer;
+
+  justify-self: start;
+  margin-left: 20px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+li,
+a {
+  color: white;
+}
+
+li,
+a:hover{
+  text-decoration:none;
+  color: white;
+}
+
+.nav-links:hover {
+  background: #0088a9;
+  text-decoration:none;
+  color: white;
+}
+
+.menu-icon{
+  display: none;
+}
+
+@media screen and (max-width: 960px){
+  .NavbarItems{
+    position: relative;
+  }
+
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:500px;
+    position: absolute;
+    top:80px;
+    left:-100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.nav-menu.active{
+  background: #03004d;
+  left: 0;
+  opacity:1;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.nav-links{
+  text-align: center;
+  padding:2rem;
+  width: 100%;
+  display: table;
+}
+
+.navbar-logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-links:hover{
+  background:#0088a9;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.menu-icon{
+  display:block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  -webkit-transform: translate(-100%, 60%);
+  -moz-transform: translate(-100%, 60%);
+  -ms-transform: translate(-100%, 60%);
+  -o-transform: translate(-100%, 60%);
+  cursor: pointer;
+}
 }

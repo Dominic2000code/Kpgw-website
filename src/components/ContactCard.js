@@ -1,8 +1,11 @@
-import React from "react";
-import "./ContactCard.css";
-import { graphql, useStaticQuery } from "gatsby";
+import React from "react"
+import "./ContactCard.css"
+import { graphql, useStaticQuery } from "gatsby"
 
-import BackgroundImage from "gatsby-background-image";
+import BackgroundImage from "gatsby-background-image"
+import EmailIcon from '@material-ui/icons/Email'
+import PhoneIcon from '@material-ui/icons/Phone'
+import LocationCityIcon from '@material-ui/icons/LocationCity'
 
 const ContactCard = ({ className }) => {
   const data = useStaticQuery(
@@ -17,15 +20,15 @@ const ContactCard = ({ className }) => {
         }
         email: file(relativePath: { eq: "Icon material-email@2x.png" }) {
           childImageSharp {
-            fluid(quality: 100) {
+            fluid(quality: 100, maxWidth: 420) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         office: file(relativePath: { eq: "Icon metro-location-city@2x.png" }) {
           childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(quality: 100, maxWidth: 420) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -44,9 +47,9 @@ const ContactCard = ({ className }) => {
             fluid={data.phone.childImageSharp.fluid}
             backgroundColor={`#fff`}
           >
-            <p className="pb-5">Phone:</p>
+            <p className="pb-5"><PhoneIcon/> Phone:</p>
             <a className="aOne " href="tel://+233 555 555 555">
-              <p>+233 555 555 555</p>
+              <p className="pb-5">+233 555 555 555</p>
             </a>
           </BackgroundImage>
         </div>
@@ -58,9 +61,9 @@ const ContactCard = ({ className }) => {
             fluid={data.email.childImageSharp.fluid}
             backgroundColor={`#fff`}
           >
-            <p className="pb-5">Email:</p>
-            <a className="aOne" href="mailto:kpgw@gmail.com">
-              <p>kpgw@gmail.com</p>
+            <p className="pb-5"><EmailIcon/> Email:</p>
+            <a className="aOne " href="mailto:kpgw@gmail.com">
+              <p className="pb-5">kpgw@gmail.com</p>
             </a>
           </BackgroundImage>
         </div>
@@ -72,8 +75,8 @@ const ContactCard = ({ className }) => {
             fluid={data.office.childImageSharp.fluid}
             backgroundColor={`#fff`}
           >
-            <p className="pb-5">Church Office:</p>
-            <p>Tema Comm. 11 Near Presby University</p>
+            <p className="pb-5"><LocationCityIcon/> Church Office:</p>
+            <p className="pb-5">Tema Comm. 11 Near Presby University</p>
           </BackgroundImage>
         </div>
       </div>

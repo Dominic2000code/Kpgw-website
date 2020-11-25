@@ -1,7 +1,5 @@
 .ContactCard-Container{
     text-align: center;
-    /* background:#fff;
-    color:#000; */
 }
 .aOne{
     color: #000;
@@ -15,9 +13,6 @@
     text-decoration: none;
 }
 
-img{
-    width:100%;
-}
 
 .card_{
     width: 400px;
