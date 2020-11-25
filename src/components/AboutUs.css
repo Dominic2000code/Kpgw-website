@@ -1,5 +1,54 @@
-.aboutUs_bg{
-    color:#fff;
-    text-align:center;
-    height:500px;
+.aboutUs_bg {
+  color: #fff;
+  text-align: center;
+  height: 500px;
+}
+
+.main-head{
+    padding: 20%;
+}
+
+Img {
+  width: 100%;
+}
+
+.main-ps {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.supporting-ps {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pastors-head_title::after {
+  content: "";
+  display: block;
+  width: 4em;
+  height: 2px;
+  margin: 0.2em auto 1em;
+  background: #000;
+  opacity: 0.25;
+  margin-bottom: 0.25em;
+}
+
+.leader-head_title::after{
+    content: "";
+  display: block;
+  width: 4.5em;
+  height: 2px;
+  margin: 0.2em auto 1em;
+  background: #000;
+  opacity: 0.25;
+  margin-bottom: 0.25em;
+}
+
+.leaders{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+    justify-content: center;
 }
