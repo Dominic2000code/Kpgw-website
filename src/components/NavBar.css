@@ -110,13 +110,12 @@ img {
   padding: 0.5rem 1rem;
 }
 
-li,
+.nav-menu li,
 a {
   color: white;
 }
 
-li,
-a:hover{
+.nav-menu ul,li,.a:hover{
   text-decoration:none;
   color: white;
 }

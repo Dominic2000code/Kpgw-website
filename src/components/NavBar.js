@@ -52,13 +52,19 @@ const NavBar = () => {
       </div>
       <ul className={navToggle ? "nav-menu active" : "nav-menu"}>
         <li className="nav-links">
-          <Link to="/">Home</Link>
+          <Link className="a" to="/">
+            Home
+          </Link>
         </li>
         <li className="nav-links">
-          <Link to="/contact-us/">Contact-us</Link>
+          <Link className="a" to="/contact-us/">
+            Contact-us
+          </Link>
         </li>
         <li className="nav-links">
-          <Link to="/about-us/">About-us</Link>
+          <Link className="a" to="/about-us/">
+            About-us
+          </Link>
         </li>
       </ul>
     </nav>
