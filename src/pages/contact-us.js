@@ -4,15 +4,17 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import ContactCard from "../components/ContactCard"
 import "../components/Container.css"
+import Seo from "../components/Seo";
 
 function ContactUs(){
     return (
-        <>
-            <NavBar />
-            <ContactCard />
-            <Footer />
-        </>
-    )
+      <>
+        <Seo title="Contact-Us" />
+        <NavBar />
+        <ContactCard />
+        <Footer />
+      </>
+    );
 }
 
 export default ContactUs

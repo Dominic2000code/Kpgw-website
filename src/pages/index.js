@@ -8,12 +8,14 @@ import MeetingTable from "../components/MeetingTable"
 import EventsAndConferences from "../components/Events&Conferences"
 import LocateUs from "../components/LocateUs"
 import Subscribe from "../components/Subscribe"
+import Seo from "../components/Seo";
 // import "../components/carouselContainer.css"
 import "../components/Container.css"
 
 export default function Home() {
   return (
     <>
+      <Seo title="Home"/>
       <NavBar />
       <CarouselComponent />
       <CardComponent />

@@ -6,6 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Kpgw",
+    description: "Kingdom Power Glory's official website",
+    url: "https://kpgw.org",
+    image: "/KPGW-Logo.png",
+    twitterUsername: "@kpgw",
+    author:"SidCorp",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,4 +40,4 @@ module.exports = {
       },
     },
   ],
-}
+};
