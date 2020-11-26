@@ -22,3 +22,11 @@
     opacity: 0.25;
     margin-bottom: 0.25em;
 }
+
+#gatsby-focus-wrapper > div.Container_.mb-5.mt-5 > a{
+    background: #03004d;
+}
+
+#gatsby-focus-wrapper > div.Container_.mb-5.mt-5 > a:hover{
+    color:#fff;
+}

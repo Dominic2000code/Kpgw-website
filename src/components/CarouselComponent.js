@@ -1,7 +1,7 @@
-import React from "react"
-import { UncontrolledCarousel } from "reactstrap"
+import React from "react";
+import { UncontrolledCarousel } from "reactstrap";
 // import carousel1 from "../images/carousel1.png"
-import "./carouselContainer.css"
+import "./carouselContainer.css";
 
 const items = [
   {
@@ -28,12 +28,12 @@ const items = [
     header: "",
     key: "3",
   },
-]
+];
 
 const CarouselComponent = () => (
   <div className="carousel-container">
-    <UncontrolledCarousel className="mt-1" items={items} />
+    <UncontrolledCarousel className=" carousel_" items={items} />
   </div>
-)
+);
 
-export default CarouselComponent
+export default CarouselComponent;

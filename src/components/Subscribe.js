@@ -1,18 +1,18 @@
-import React, { useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React, { useState } from "react";
+import { graphql, useStaticQuery } from "gatsby";
 
-import BackgroundImage from "gatsby-background-image"
-import "./Subscribe.css"
+import BackgroundImage from "gatsby-background-image";
+import "./Subscribe.css";
 
 const Subscribe = ({ className }) => {
-  const [email, setEmail] = useState("")
+  const [email, setEmail] = useState("");
 
   const AddEmail = e => {
-    e.preventDefault()
+    e.preventDefault();
     // addTodo(title)
     // console.log(title, author)
-    setEmail("")
-  }
+    setEmail("");
+  };
 
   const data = useStaticQuery(
     graphql`
@@ -26,15 +26,15 @@ const Subscribe = ({ className }) => {
         }
       }
     `
-  )
+  );
 
   // Set ImageData.
-  const imageData = data.background.childImageSharp.fluid
+  const imageData = data.background.childImageSharp.fluid;
 
   return (
     <BackgroundImage
       Tag="section"
-      className={className}
+      className="subscribe_bg"
       fluid={imageData}
       backgroundColor={`#03004d`}
     >
@@ -44,7 +44,7 @@ const Subscribe = ({ className }) => {
         <div className="form-container mt-5">
           <form onSubmit={AddEmail}>
             <input
-              type="text"
+              type="email"
               placeholder="john@doe.com"
               value={email}
               onChange={e => setEmail(e.target.value)}
@@ -55,7 +55,7 @@ const Subscribe = ({ className }) => {
         </div>
       </div>
     </BackgroundImage>
-  )
-}
+  );
+};
 
-export default Subscribe
+export default Subscribe;

@@ -7,7 +7,7 @@ form {
 
 .subscribe-container{
     color: #fff;
-    height: 60vh;
+    /* height: 60vh; */
     margin: auto;
 }
 
@@ -16,14 +16,14 @@ form {
     text-align: center;
 }
 
-input[type="text"] {
+input[type="email"] {
 	width: 500px;
 	padding: 5px;
 	/* font-weight: bold; */
 	/* font-size: 1.2em; */
 }
 
-input[type="text"]:focus {
+input[type="email"]:focus {
 	outline-color: none;
 	outline-style: none;
 }
@@ -44,3 +44,73 @@ input[type="submit"]:hover {
 	color: #ffff;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 600px){
+    input[type="email"]{
+        width: auto;
+    }
+
+    input[type="submit"] {
+        margin: auto;
+        padding: 6.5px auto;
+        display: block;
+    }
+}
+
+
+
+/* @media only screen and (max-width: 540px){
+    input[type="email"]{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    #gatsby-focus-wrapper > section > div > h2{
+        font-size: 1.3rem;
+    }
+    input[type="email"]{
+        width: 144px;
+    }
+    input[type="submit"] {
+        margin: auto;
+    }
+    #gatsby-focus-wrapper > section > div > div > form > input[type=email]:nth-child(1){
+        width: 144px;
+    }
+}
+
+
+@media only screen and (max-width: 411px){
+    #gatsby-focus-wrapper > section > div > h2{
+        font-size: 1.5rem;
+    }
+    input[type="email"]{
+        width: 195px;
+    }
+    input[type="submit"] {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #gatsby-focus-wrapper > section > div > h2{
+        font-size: 1.1rem;
+    }
+    input[type="email"]{
+        width: 122px;
+    }
+    input[type="submit"] {
+        margin: auto;
+        padding: 6.5px 11px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #gatsby-focus-wrapper > section > div > h2{
+        font-size: 1rem;
+    }
+    input[type="email"]{
+        width: 144px;
+    }
+} */

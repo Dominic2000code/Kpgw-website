@@ -3,3 +3,25 @@
     height:70%;
     margin: 0 auto;
 }
+
+.carousel_{
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 1024px){
+    .carousel-container{
+        width:100%;
+        margin:0;
+    }
+
+    .carousel_{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .carousel-container{
+    height:100%;
+    width:100%;
+}
+}
