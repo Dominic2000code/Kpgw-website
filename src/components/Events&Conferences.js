@@ -15,12 +15,12 @@ const EventsAndConferences = () => {
             }
         }
     `)
-
+const Fluid = data.imageSharp.fluid;
     return (
         <div className="Container_ mb-5 mt-5">
             <h2 className="head-title_">Events and conferences</h2>
             <div className="img">
-                <Img fluid={ data.imageSharp.fluid} />
+                <Img fluid={Fluid && data.imageSharp.fluid} />
             </div>
             <Button variant="contained" className="btn mt-3 " color="primary" size="large" href="/events-and-conferences/" >View</Button>
         </div>
