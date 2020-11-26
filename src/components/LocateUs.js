@@ -13,13 +13,13 @@ const LocateUs = () => {
       }
     }
   `);
-
+ const Fixed = data.imageSharp.fixed
   return (
     <div className="locateUs-container mb-5">
       <h2 className="locateUs__head-title text-center mb-3">Locate us at</h2>
       <div className="inner-container">
         <div className="map mr-3">
-          <Img fixed={data.imageSharp.fixed} />
+          <Img fixed={Fixed && data.imageSharp.fixed} />
         </div>
         <p className="location">Tema Comm. 4, Opp. Ghana Water Co.</p>
       </div>
