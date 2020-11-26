@@ -112,7 +112,7 @@ img {
 
 .nav-menu li,
 a {
-  color: white;
+  color: white !important;
 }
 
 .nav-menu ul,li,.a:hover{

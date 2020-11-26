@@ -2,7 +2,7 @@
   text-align: center;
 }
 .aOne {
-  color: #000;
+  color: #000 !important;
   text-decoration: none;
   text-transform: lowercase;
   font-weight: 500;
@@ -11,6 +11,7 @@
 
 .aOne:hover {
   text-decoration: none;
+  color: #0088a9 !important;
 }
 
 
