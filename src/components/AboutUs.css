@@ -13,15 +13,17 @@ Img {
 }
 
 .main-ps {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 5px;
+    justify-content: center;
 }
 
 .supporting-ps {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+    justify-content: center;
 }
 
 .pastors-head_title::after {
@@ -52,3 +54,27 @@ Img {
     gap: 5px;
     justify-content: center;
 }
+
+@media only screen and (max-width: 768px){
+  .main-ps {
+  display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 20px;
+    justify-content: center;
+}
+
+.supporting-ps {
+  display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 20px;
+    justify-content: center;
+}
+
+.leaders{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 20px;
+    justify-content: center;
+}
+}
+

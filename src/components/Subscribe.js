@@ -1,17 +1,35 @@
 import React, { useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
-
+import { navigate } from "gatsby-link";
 import BackgroundImage from "gatsby-background-image";
 import "./Subscribe.css";
 
-const Subscribe = ({ className }) => {
-  const [email, setEmail] = useState("");
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
-  const AddEmail = e => {
+const Subscribe = ({ className }) => {
+  const [email, setEmail] = useState({});
+
+  const handleChange = e => {
+    setEmail({ ...email, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = e => {
     e.preventDefault();
-    // addTodo(title)
-    // console.log(title, author)
-    setEmail("");
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...email,
+      }),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error));
   };
 
   const data = useStaticQuery(
@@ -39,15 +57,29 @@ const Subscribe = ({ className }) => {
       backgroundColor={`#03004d`}
     >
       <div className="subscribe-container p-5 ">
-        <h2 className="text-center">Subscribe to our newsletter</h2>
+        <h5 className="text-center">Subscribe to our newsletter</h5>
 
         <div className="form-container mt-5">
-          <form onSubmit={AddEmail}>
+          <form
+            name="subscription"
+            method="post"
+            action="/redirect/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="subscription" />
+            <p hidden>
+              <label>
+                Don't fill this out:{" "}
+                <input name="bot-field" onChange={handleChange} />
+              </label>
+            </p>
             <input
               type="email"
+              name="email"
               placeholder="john@doe.com"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
+              onChange={handleChange}
               required
             />
             <input type="submit" value="SEND" />
