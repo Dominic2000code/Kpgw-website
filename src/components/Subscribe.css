@@ -8,7 +8,7 @@ form {
 .subscribe-container{
     color: #fff;
     /* height: 60vh; */
-    margin: auto;
+    /* margin: auto; */
 }
 
 .form-container{
@@ -48,6 +48,9 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 600px){
     input[type="email"]{
         width: auto;
+    }
+    #gatsby-focus-wrapper > section > div > h3{
+        font-size: 1.25rem;
     }
 
     input[type="submit"] {

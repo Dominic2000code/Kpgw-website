@@ -12,6 +12,11 @@
     width: 100%;
 }
 
+.events_bg{
+    width: 100%;
+    height: 100vh;
+}
+
 .head-title_::after{
     content: '';
     display: block;

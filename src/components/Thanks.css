@@ -1,0 +1,15 @@
+.thanks_bg{
+    color: #fff;
+    height: 100vh;
+}
+
+#gatsby-focus-wrapper > section > div > a{
+    background: #03004d;
+}
+
+.thanks-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
