@@ -57,7 +57,7 @@ const Subscribe = ({ className }) => {
       backgroundColor={`#03004d`}
     >
       <div className="subscribe-container p-5 ">
-        <h5 className="text-center">Subscribe to our newsletter</h5>
+        <h3 className="text-center">Subscribe to our newsletter</h3>
 
         <div className="form-container mt-5">
           <form

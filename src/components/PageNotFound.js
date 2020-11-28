@@ -30,7 +30,7 @@ function PageNotFound() {
       backgroundColor={`#03004d`}
     >
       <div className="text-center">
-        <h1>404: Page Not Found</h1>
+        <h1 className="pt-5">404: Page Not Found</h1>
         <Button
           variant="contained"
           className="btn mt-3 "

@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
+import Thanks from "../components/Thanks";
 import Seo from "../components/Seo";
 
 function redirect() {
@@ -8,7 +9,8 @@ function redirect() {
       <>
         <Seo title="Thank you" />
         <NavBar />
-        <Footer />
+        <Thanks/>
+        {/* <Footer /> */}
       </>
     );
 }
