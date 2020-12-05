@@ -32,7 +32,10 @@ const items = [
 
 const CarouselComponent = () => (
   <div className="carousel-container">
-    <UncontrolledCarousel className=" carousel_" items={items} />
+    <UncontrolledCarousel
+      className=" carousel_"
+      items={items}
+    />
   </div>
 );
 
