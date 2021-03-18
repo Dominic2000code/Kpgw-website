@@ -12,9 +12,7 @@ const CardComponent = () => {
         <CardBody className="text-center">
           <CardText className="CardText_">
             To spread the good news to all corners of the earth and empower the
-            children of God to do exploits. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Cupiditate, maiores. Lorem ipsum,
-            dolor sit amet consectetur adipisicing elit. Reprehenderit, officia.
+            children of God to do exploits.
           </CardText>
         </CardBody>
       </Card>
@@ -24,9 +22,7 @@ const CardComponent = () => {
         <CardBody className="text-center">
           <CardText className="CardText_">
             To change the mindsets of Christians from just praying all the time
-            to adding actions to the prayer and making a difference. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Aliquam, odit. Lorem
-            ipsum dolor sit amet consectetur, adipisicing elit. Illo.
+            to adding actions to the prayer and making a difference.
           </CardText>
         </CardBody>
       </Card>
