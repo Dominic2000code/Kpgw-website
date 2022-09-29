@@ -23,7 +23,7 @@ const LocateUs = () => {
         <div className="map mr-3">
           {data.Map && <Img fixed={data.Map.childImageSharp.fixed} />}
         </div>
-        <p className="location">Tema Comm. 4, Opp. Ghana Water Co.</p>
+        <p className="location">Tema Comm. 4, Opposite Ghana Water Co.</p>
       </div>
     </div>
   );

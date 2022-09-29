@@ -56,6 +56,30 @@ function AboutUs() {
             }
           }
         }
+
+        uncleAlex: file(relativePath: { eq: "uncle_alex.jpeg" }) {
+          childImageSharp {
+            fixed(width: 300, height: 300) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+
+        maaDot: file(relativePath: { eq: "maa_dot.jpeg" }) {
+          childImageSharp {
+            fixed(width: 300, height: 300) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+
+        auntieDzifa: file(relativePath: { eq: "auntie_dzifa.jpeg" }) {
+          childImageSharp {
+            fixed(width: 300, height: 300) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     `
   );
@@ -69,7 +93,7 @@ function AboutUs() {
         fluid={imageData}
         backgroundColor={`#F5F6FA`}
       >
-        <h2 className="main-head">Get To Know Us</h2>
+        <h2 className="main-head">GET TO KNOW US</h2>
       </BackgroundImage>
 
       <div className="people m-5">
@@ -102,15 +126,15 @@ function AboutUs() {
         <h2 className="leader-head_title mt-5 text-center">Our Leaders</h2>
         <div className="leaders mt-3">
           <AboutUsCard
-            image={data.ps_Victor.childImageSharp.fixed}
+            image={data.uncleAlex.childImageSharp.fixed}
             name="Mr Alex Quoicoe"
           />
           <AboutUsCard
-            image={data.ps_Victor.childImageSharp.fixed}
+            image={data.auntieDzifa.childImageSharp.fixed}
             name="Mrs Dzifa Quoicoe"
           />
           <AboutUsCard
-            image={data.ps_Victor.childImageSharp.fixed}
+            image={data.maaDot.childImageSharp.fixed}
             name="Mrs Dorothy Ahadzie"
           />
           <AboutUsCard
