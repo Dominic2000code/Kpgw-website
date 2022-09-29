@@ -17,8 +17,9 @@ function Events() {
           <h3 className="event-title">Glory to Glory: Day 1</h3>
 
           <div className="event-description">
-            Come kickstart mountain of glory with us and experience the
-            immeasurable glory our our Living Most High.
+            It's our annual conference dubbed Mountain of Glory.It's going to be
+            a moment of breakthrough with seasoned men and women of God. It'll
+            be a powerful time in the presence of God. See you there.
           </div>
 
           <div className="event-timing">06:30pm - 09:00pm</div>
@@ -36,8 +37,9 @@ function Events() {
           <h3 className="event-title">Glory to Glory: Day 2</h3>
 
           <div className="event-description">
-            Join us on the second day of mountain of glory for an awesome
-            experience
+            It's our annual conference dubbed Mountain of Glory.It's going to be
+            a moment of breakthrough with seasoned men and women of God. It'll
+            be a powerful time in the presence of God. See you there.
           </div>
 
           <div className="event-timing">06:30pm - 09:00pm</div>
@@ -55,8 +57,9 @@ function Events() {
           <h3 className="event-title">Glory to Glory: Day 3</h3>
 
           <div className="event-description">
-            It's the third day of mountain of glory, don't miss it for anything
-            because your breakthrough awaits you.
+            It's our annual conference dubbed Mountain of Glory.It's going to be
+            a moment of breakthrough with seasoned men and women of God. It'll
+            be a powerful time in the presence of God. See you there.
           </div>
 
           <div className="event-timing">06:30pm - 09:00pm</div>
@@ -74,8 +77,9 @@ function Events() {
           <h3 className="event-title">Thanksgiving Sunday</h3>
 
           <div className="event-description">
-            Come and let's praise and thank the Almighty for His guidance and
-            blessings.
+            It's our annual conference dubbed Mountain of Glory.It's going to be
+            a moment of breakthrough with seasoned men and women of God. It'll
+            be a powerful time in the presence of God. See you there.
           </div>
 
           <div className="event-timing">07:30am - 10:00am</div>
